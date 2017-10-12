@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Options for Github Enterprise ID to Name Converter</title>
+</head>
+<body>
+	<h1>Github Enterprise ID to Name Converter</h1>
+	<input id="urlMatch" placeholder="URL to Match">
+	<div style="font-size: smaller; color: #999;">
+		This matches with an indexOf string check.  This may be changed in future versions.
+	</div>
+	<br />
+	<input id="apiUrl" placeholder="Github Enterprise API Url">
+	<div style="font-size: smaller; color: #999;">
+		Input the url to the Enterprise API root.  Something like http://github.com/api/v3.
+	</div>
+	<br>
+	<input id="idPattern" placeholder="ID Pattern Regex to match against">
+	<div style="font-size: smaller; color: #999;">
+		This is the pattern to match against for your enterprise's ID pattern.  This is going to go into a RegExp, so it's everything between the /'s.
+	</div>
+	<br><br>
+	<button id="save">Save</button>
+
+	<div id="status"></div>
+
+	<script type="text/javascript" src="options.js"></script>
+</body>
+</html>
